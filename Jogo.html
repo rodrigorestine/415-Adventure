@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>415 Adventure!</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+        <div id="startScreen" class="overlay">
+            <h1>415 Adventure!</h1> 
+            <p>Em: O Resgate da Pembada Dourada!</p>
+            <p>Controles:<br>
+            A/D ou Setas Esquerda/Direita: Mover<br>
+            Espaço: Pular (e Pulo Duplo)<br>
+            Enter: Atirar (após adquirir a Arma)</p>
+            <button onclick="iniciarJogo()">Iniciar Missão</button>
+        </div>
+
+        <div id="gameOverScreen" class="overlay hidden">
+            <h1>FIM DE JOGO!</h1>
+            <p id="finalScoreText">Pontuação final: 0</p>
+            <button onclick="resetarJogo()">Jogar Novamente</button>
+        </div>
+
+        <div id="winScreen" class="overlay hidden">
+            <h1>VITÓRIA!</h1>
+            <p>Você atingiu o Phallus de Ouro e salvou o dia!</p>
+            <button onclick="resetarJogo()">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <div id="uiContainer">
+        <div id="placar">Vida: 100% / 100%</div>
+        <div id="status-arma">Status da Arma: NÃO (Força: 1x)</div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
