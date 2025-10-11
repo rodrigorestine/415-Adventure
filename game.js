@@ -89,7 +89,7 @@ const VELOCIDADE_MOVIMENTO = 5;
 const PONTOS_PARA_ARMA = 50;
 const PROJETIL_VELOCIDADE = 10;
 const VELOCIDADE_SUBIDA_ESCADA = 4;
-const TAMANHO_JOGADOR = { width: 50, height: 50 };
+const TAMANHO_JOGADOR = { width: 80, height: 80 };
 const MAX_LINHAS_TIRO = 4;
 
 // ZIGUE-ZAGUE
@@ -142,7 +142,7 @@ const ROXO = '#800080';
 const ROSA_CURA = '#ff69b4';
 const CINZA_ESCURO = '#323232';
 const LARANJA_PROJETIL = 'orange';
-const CINZA_ARMA_PROJETIL = '#969696';
+const CINZA_ARMA_PROJETIL = 'red';
 const OURO = '#ffd700';
 const ROSA_PISCA = '#ffc0cb'; 
 const ROXO_PISCA = '#c080ff'; 
